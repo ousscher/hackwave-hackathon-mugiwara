@@ -61,4 +61,4 @@ class SpeachConsumer(WebsocketConsumer):
         
     def disconnect(self, code):
         self.disc.end_datetime=datetime.datetime.now()
-        self.disc.save()
+        # self.disc.save()
