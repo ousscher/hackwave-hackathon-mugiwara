@@ -1,19 +1,32 @@
-# Projet Hackwave
+# Simulation de centre d'appel
+C'est un outil simuler la gestion des appels téléphoniques dans le centre d'appel de SATIM.
 
-Hackwave est une plateforme web composée d'un backend et d'un frontend. Le backend est développé avec Django, tandis que le frontend est réalisé avec React. Suivez les instructions ci-dessous pour cloner, installer les dépendances et exécuter le projet.
+## Guide d'installation
 
-## Prérequis
+#### Setup
+```bash
+git clone https://github.com/ousscher/hackwave-hackathon-mugiwara
+cd hackwave-hackathon-mugiwara
 
-Avant de commencer, assurez-vous d'avoir les éléments suivants installés sur votre machine :
-
-- **Python 3.8+**
-- **Pipenv** pour gérer les environnements Python
-- **Node.js** et **npm**
-
-## Démarrage
-
-1. **Cloner le dépôt** :
-   ```bash
-   git clone https://github.com/votreutilisateur/hackwave.git
-   cd hackwave-hackathon-mugiwara
-
+```
+#### Run & Stop & Debug
+Pour lancer le backend
+```bash
+cd hackwave-backend/
+pipenv shell
+pipenv install -r requirements.txt
+cd backend/
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+```
+Pour lancer le frontend : dans un nouvel terminal, revenir à hackwave-hackathon-mugiwara
+```bash
+cd hackwave-frontend/
+npm install 
+npm run dev 
+```
+Pour avoir acces à l'application
+```bash
+http://localhost:5173/
+```
