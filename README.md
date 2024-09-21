@@ -3,11 +3,16 @@ C'est un outil simuler la gestion des appels téléphoniques dans le centre d'ap
 
 ## Guide d'installation
 
+#### Requirements
+- python3
+- Verifiez que la commande `pipenv` est presente dans votre systeme
+- Le port 8000 doit etre libre
+- Le port 5173 est preferable d'etre libre aussi
+
 #### Setup
 ```bash
 git clone https://github.com/ousscher/hackwave-hackathon-mugiwara
 cd hackwave-hackathon-mugiwara
-
 ```
 #### Run & Stop & Debug
 Pour lancer le backend
